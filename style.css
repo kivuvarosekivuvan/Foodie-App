@@ -1,0 +1,227 @@
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+  }
+  ul{
+    margin:0;
+    padding:0;
+    display:flex;
+    padding-top: 20px;
+  }
+  ul li{
+    list-style:none;
+    margin:0 20px;
+    transition:0.5s;
+    margin-left: 6%;
+  }
+  ul li a{
+    display: block;
+    position:relative;
+    text-decoration:none;
+    padding:5px;
+    font-size:16px;
+    font-family: sans-serif;
+    color:#110f0f;
+    text-transform:uppercase;
+    transition:0.5s;
+    margin-top: 8%;
+  }
+  ul:hover li a{
+    transform:scale(1.5);
+    opacity:0.2;
+    filter:blur(5px);
+  }
+  ul li a:hover{
+    transform:scale(2);
+    opacity:1;
+    filter:blur(0);
+    text-decoration:none;
+    color:#fff;
+  }
+  ul li a:before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#f8a50a;
+    transition:0.5s;
+    transform-origin:right;
+    transform:scaleX(0);
+    z-index:-1;
+  }
+  ul li a:hover:before{
+    transition:transform 0.5s;
+    transform-origin:left;
+    transform:scaleX(1);
+  }
+  .homepage{
+      background-image: url(./imageFolder/back2.png);
+      height: 700px;
+      width: 100%;
+      background-size: cover; 
+      background-repeat: no-repeat;
+      /* overflow: hidden; */
+     
+     
+  }
+  .btn{
+    border: 1px solid black ;
+    background-color: transparent;
+    
+  }
+  .landpage{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      padding-top: 5%;
+      /* margin-top: 10%; */
+      margin-left: 1%;
+     
+  }
+  .foodParagrah{
+      color: #FFCA42;
+  }
+  .headings h1{
+    margin-top: 5%;
+    font-size: 50px;
+    margin-bottom: 5%;
+  }
+  button{
+    margin-top: 5%;
+    margin-left: 5%;
+    padding: 3% 10%;
+    background-color: #FFCA42;
+    border: none;
+    border-radius:20px;
+      
+      
+  }
+  .photo img{
+    width: 500px;
+    display: inline-block;
+    margin: 0 0.5rem;
+    margin-top: 10%;
+    height: 500px;
+    width: 80%;
+  
+    animation: jackInTheBox; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 3s; /* don't forget to set a duration! */
+     animation-iteration-count: infinite; 
+   }
+  
+   .foodStart h1{
+    margin-top: 2% ;
+    text-align: center;
+    font-size:60px;
+   }
+   .pictureOne{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-left: 10%;
+    
+   
+   }
+   .photoTwo img{
+    height: 400px;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    margin-top: 10%;
+    animation: jackInTheBox; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 5s; /* don't forget to set a duration! */
+     animation-iteration-count: infinite; 
+     border: 3px solid #FFCA42;
+    box-shadow: solid 50px #FFCA42;
+  
+   }
+   .footer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    list-style: none;
+    margin-top: 5%;
+    padding-top: 5%;
+    padding-left: 10%;
+    background-color: rgb(66, 64, 64);
+    color: aliceblue;
+   }
+   .box h3{
+    color: #FFCA42;
+   }
+   .box a{
+    text-decoration: none;
+    color: aliceblue;
+   }
+   .fiesta{
+    color:#FFCA42;
+    text-decoration: none;
+   }
+  
+   /* .footer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    list-style: none;
+    margin-top: 5%;
+    padding-top: 5%;
+    padding-left: 10%;
+    background-color: rgb(66, 64, 64);
+    color: aliceblue;
+   } */
+   .box h3{
+    color: #FFCA42;
+   }
+   .box a{
+    text-decoration: none;
+    color: aliceblue;
+  
+   }
+   .fiesta{
+    color:#FFCA42;
+    text-decoration: none;
+   }
+  
+  h1 {
+    margin-top: 5%;
+    text-align: center;
+  }
+  .us{
+    color: #FFCA42;
+  }
+  p {
+    text-align: center;
+    font-weight: 550;
+  }
+  .choose {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+    
+  }
+  .choose-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: #F0F0F0;
+    margin: 10px;
+  }
+  .pics {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+  }
+  .content {
+    text-align: center;
+    font-style: italic;
+    font-weight: 500;
+  }
+  .choose-us img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+  }

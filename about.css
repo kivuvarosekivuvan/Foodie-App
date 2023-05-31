@@ -1,0 +1,105 @@
+
+ul{
+    margin:0;
+    padding:2%;
+    display:flex;
+  }
+  ul li{
+    list-style:none;
+    margin:0 20px;
+    transition:0.5s;
+    margin-left: 6%;
+  }
+  ul li a{
+    display: block;
+    position:relative;
+    text-decoration:none;
+    padding:5px;
+    font-size:16px;
+    font-family: sans-serif;
+    color:#110f0f;
+    text-transform:uppercase;
+    transition:0.5s;
+    margin-top: 4%;
+  }
+  ul:hover li a{
+    transform:scale(1.5);
+    opacity:0.2;
+    filter:blur(5px);
+  }
+  ul li a:hover{
+    transform:scale(2);
+    opacity:1;
+    filter:blur(0);
+    text-decoration:none;
+    color:#fff;
+  }
+  ul li a:before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#f8a50a;
+    transition:0.5s;
+    transform-origin:right;
+    transform:scaleX(0);
+    z-index:-1;
+  }
+  ul li a:hover:before{
+    transition:transform 0.5s;
+    transform-origin:left;
+    transform:scaleX(1);
+  }
+  .footer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    list-style: none;
+  
+    padding-top: 5%;
+    padding-left: 10%;
+    background-color: rgb(66, 64, 64);
+    color: aliceblue;
+   }
+   .box h3{
+    color: #FFCA42;
+   }
+   .box a{
+    text-decoration: none;
+    color: aliceblue;
+   }
+   .landpage{
+    display:grid ;
+    grid-template-columns: repeat(3,1fr);
+    margin-left: 10%;
+    margin-top: 5%;
+   }
+   .about{
+    animation: fadeInTopLeft; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+  
+   }
+   .image img{
+   
+    height: 400px;
+    width: 400px;
+    margin-left: 30%;
+    border-radius: 20px;
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+   }
+   .mimi{
+    font-size: 50px;
+  
+   }
+   .us{
+    color: #FFCA42;
+   }
+   .homepage{
+    background-image: url(./images/image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+   }
