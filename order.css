@@ -96,16 +96,17 @@ margin-top: -40px;
 }
 
 .order form{
+
     flex: 1 1 60%;
     background: #fff;
-    padding: 2rem;
+    padding: 1rem;
     width: 40%;
-    height: 70vh;
+    height: 80vh;
     margin-left: 400px;
-    border-radius: 40px;margin-top: 20px;
+    border-radius: 40px;
 }
 .order .row form .box{
-padding: 0.8rem;
+padding: 1.6rem;
 margin: 0.3rem 0;
 font-size: 1.5rem;
 color: #333;
@@ -119,10 +120,13 @@ margin-left: 90px;
 }
 .order .row form .address{
     resize: none;
-    height: 10rem;
+    height: 7rem;
     margin-bottom: 40px;
 
 } 
+#form{
+    margin-top: 170px;
+}
 .btn{
     border-radius: 20px;
     margin-left: -500px;
@@ -133,6 +137,7 @@ margin-left: 90px;
 }
 
 .heading{
+    margin-bottom: -80px;
     margin-left: 400px;
     font-size: 50px;
     margin-top: 50px;
